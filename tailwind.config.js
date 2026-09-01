@@ -8,6 +8,40 @@ export default {
   theme: {
     extend: {
       colors: {
+        forest: {
+          950: '#0b100d',
+          900: '#111914',
+          850: '#17221c',
+          800: '#1e2c24',
+          700: '#2b3f34',
+          600: '#3c5849',
+        },
+        copper: {
+          300: '#f5aa7d',
+          400: '#ec8750',
+          500: '#d96b32',
+          600: '#b8511e',
+          700: '#943f16',
+          900: '#4d1e08',
+          950: '#2c1003',
+        },
+        moss: {
+          300: '#a3c29d',
+          400: '#7fa877',
+          500: '#5c8a54',
+          600: '#466d3f',
+          800: '#263d22',
+          950: '#101a0e',
+        },
+        parchment: {
+          50: '#fdfbf7',
+          100: '#f7f2e7',
+          200: '#ede2ce',
+          300: '#dfceb0',
+          400: '#c8af88',
+          800: '#4a3d29',
+          900: '#2a2216',
+        },
         reptile: {
           50: '#f0fdf4',
           100: '#dcfce7',
@@ -21,43 +55,20 @@ export default {
           900: '#14532d',
           950: '#052e16',
         },
-        jungle: {
-          950: '#060a08',
-          900: '#0c1410',
-          850: '#111b16',
-          800: '#17241e',
-          700: '#23372e',
-        },
-        terracotta: {
-          50: '#fff7ed',
-          100: '#ffedd5',
-          200: '#fed7aa',
-          300: '#fdba74',
-          400: '#fb923c',
-          500: '#f97316',
-          600: '#ea580c',
-          700: '#c2410c',
-          800: '#9a3412',
-          900: '#7c2d12',
-        },
-        amber: {
-          400: '#fbbf24',
-          500: '#f59e0b',
-          600: '#d97706',
-        }
       },
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
-        display: ['Outfit', 'Plus Jakarta Sans', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'jungle-mesh': 'radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.15), transparent 50%), radial-gradient(circle at 100% 100%, rgba(245, 158, 11, 0.1), transparent 50%)',
+        serif: ['Fraunces', 'Georgia', 'serif'],
+        display: ['Space Grotesk', 'Outfit', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
       },
       boxShadow: {
-        'glow-green': '0 0 25px -5px rgba(34, 197, 94, 0.3)',
-        'glow-amber': '0 0 25px -5px rgba(245, 158, 11, 0.3)',
+        'botanical': '0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 20px 0 rgba(217, 107, 50, 0.15)',
+        'copper-glow': '0 0 35px -5px rgba(217, 107, 50, 0.35)',
+        'moss-glow': '0 0 35px -5px rgba(92, 138, 84, 0.35)',
+      },
+      backgroundImage: {
+        'botanical-mesh': 'radial-gradient(at 15% 15%, rgba(217, 107, 50, 0.08) 0px, transparent 50%), radial-gradient(at 85% 20%, rgba(92, 138, 84, 0.12) 0px, transparent 50%), radial-gradient(at 50% 80%, rgba(184, 81, 30, 0.06) 0px, transparent 60%)',
       }
     },
   },
