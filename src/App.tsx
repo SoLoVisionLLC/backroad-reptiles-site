@@ -4,6 +4,7 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { MobileBottomNav } from './components/MobileBottomNav';
 import { InquiryModal } from './components/InquiryModal';
+import { VariantSwitcher } from './components/VariantSwitcher';
 
 import { HomePage } from './pages/HomePage';
 import { ShopPage } from './pages/ShopPage';
@@ -123,6 +124,8 @@ export const App: React.FC = () => {
         onClose={() => setInquiryModalOpen(false)}
         initialTopic={inquiryTopic}
       />
+
+      <VariantSwitcher />
     </div>
   );
 };
