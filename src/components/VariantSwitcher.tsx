@@ -24,7 +24,7 @@ export const VariantSwitcher: React.FC = () => {
   const active = currentVariant();
 
   return (
-    <aside className="preview-dock" aria-label="Back Road Reptiles preview comparison">
+    <aside className="preview-dock" data-preview-dock-version="v8" aria-label="Back Road Reptiles preview comparison">
       <div className="preview-dock-scroll">
         <nav className="preview-designs" aria-label="Preview designs">
           <span className="preview-group-label" aria-hidden="true">VARIANT:</span>
