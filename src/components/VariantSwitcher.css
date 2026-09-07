@@ -1,6 +1,14 @@
-/* Canonical v7 floating comparison pill. Keep controls compact inside the pill. */
+/* Canonical v8 floating comparison pill. Keep the existing client touch targets. */
 body {
   padding-bottom: calc(64px + env(safe-area-inset-bottom));
+}
+
+/* Isolate dock typography from site rules, including selectors targeting strong. */
+.preview-dock,
+.preview-dock * {
+  font: inherit !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
 }
 
 .preview-dock {
@@ -18,7 +26,7 @@ body {
   background: #252525;
   color: #FFFFFF;
   box-shadow: 0 8px 24px rgba(20, 34, 45, .24);
-  font: 500 11px/1.2 system-ui, sans-serif;
+  font: 500 11px/1.2 system-ui, sans-serif !important;
   transform: translateX(-50%);
 }
 
@@ -38,7 +46,7 @@ body {
 
 .preview-dock-scroll::-webkit-scrollbar { display: none; }
 .preview-designs { display: flex; align-items: center; gap: 2px; margin: 0; padding: 0; }
-.preview-group-label { margin-right: 4px; color: #BDBDBD; font-size: 10px; font-weight: 700; letter-spacing: .06em; }
+.preview-group-label { margin-right: 4px; color: #BDBDBD; }
 .preview-design {
   display: inline-flex;
   flex: 0 0 auto;
@@ -58,8 +66,6 @@ body {
   transition: background-color .15s ease, color .15s ease;
 }
 
-.preview-design-code { font-weight: 750; }
-.preview-design strong { font: inherit; }
 .preview-design:hover { background: rgba(255, 255, 255, .12); }
 .preview-design.is-active { background: #BC2026; color: #FFFFFF; }
 .preview-dock a:focus-visible { outline: 2px solid #BC2026; outline-offset: -3px; }
